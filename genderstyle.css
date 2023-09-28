@@ -41,11 +41,15 @@ h3 {
 }
 
 a:link {
-    color:#00b8ff;
+    color:#7d12ff;
 }
 
 a:visited{
-    color:#00fff9;
+    color:#072227;
+}
+
+a#footer:visited{
+    color: #00b8ff;
 }
 
 a:hover{
