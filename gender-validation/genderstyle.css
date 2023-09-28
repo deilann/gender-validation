@@ -33,7 +33,7 @@ h2 {
     padding-bottom: 5px;
 }
 
-/*
+
 h2:hover {
     color:#ff238e;
     background-color:#7d12ff;
@@ -41,7 +41,7 @@ h2:hover {
     border-bottom: 5px solid #ff238e;
     text-shadow: -1px -1px #0abdc6, 1px 1px #7d12ff, 2px 2px #ff238e, 4px 4px #00b8ff, 6px 6px #00fff9, 9px 9px #ab46d2;
 }
-*/
+
   
 h3 {
     font-size: 1.25rem;
@@ -129,11 +129,9 @@ legend {
   text-shadow: -1px -1px 1px #13ABC4, 0px 0px 5px #13ABC4;
 }
 
-/*
 legend:hover {
   text-shadow: -1px -1px 1px #ff238e, 0px 0px 5px #ff238e;
 }
-*/
 
 button {
     text-align: center;
