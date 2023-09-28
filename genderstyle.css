@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-  }
+}
 
 body {
     max-width:800px;
@@ -9,36 +9,50 @@ body {
     color: #293462;
 }
 
-h1 {
+/* headers */
+
+h1, h2 {
     text-align: center;
-    font-size: 3rem;
     font-variant: small-caps;
-    background-color: #aefeffd9;
-    border-bottom: 10px solid #ff238e;
+    background-color: #aefeffd9; /* TODO */
     border-radius: 25px;
-    text-shadow: -1px -1px #0abdc6, 1px 1px #7d12ff, 2px 2px #00fff9, 4px 4px #00b8ff, 6px 6px #ff238e, 9px 9px #AB46D2;
+    text-shadow: -1px -1px #0abdc6, 1px 1px #7d12ff, 2px 2px #00fff9, 4px 4px #00b8ff, 6px 6px #ff238e, 9px 9px #ab46d2;
+}
+
+h1 {
+    font-size: 3rem;
     padding: 10px;
+    border-bottom: 10px solid #ff238e;
 }
   
 h2 {
-    background-color: #AEFEFFD9;
-    border-bottom: 5px solid #13ABC4;
-    border-top: 5px solid #ff238e;
-    border-radius: 25px;
-    padding: 10px;
-    text-align: center;
     font-size: 2.5rem;
-    font-variant: small-caps;
-    text-shadow: -1px -1px #0abdc6, 1px 1px #7d12ff, 2px 2px #00fff9, 4px 4px #00b8ff, 6px 6px #ff238e, 9px 9px #AB46D2;
+    border-top: 5px solid #ff238e;
+    border-bottom: 5px solid #13ABC4;
     padding-top: 0px;
     padding-bottom: 5px;
 }
+
+/*
+h2:hover {
+    color:#ff238e;
+    background-color:#7d12ff;
+    border-top: 5px solid #13ABC4;
+    border-bottom: 5px solid #ff238e;
+    text-shadow: -1px -1px #0abdc6, 1px 1px #7d12ff, 2px 2px #ff238e, 4px 4px #00b8ff, 6px 6px #00fff9, 9px 9px #ab46d2;
+}
+*/
   
 h3 {
     font-size: 1.25rem;
     text-decoration: underline #ff238e wavy 1px;
-    font-weight: bolder;
 }
+
+h3:hover{
+    text-decoration:none;
+}
+
+/* links */
 
 a:link {
     color:#7d12ff;
@@ -48,7 +62,7 @@ a:visited{
     color:#072227;
 }
 
-a#footer:visited{
+.footer:visited{
     color: #00b8ff;
 }
 
@@ -56,10 +70,11 @@ a:hover{
     color:#ff238e;
 }
 
+
+
 ul {
     display: table;
-    margin: 5px auto;
-    text-align: left;
+    margin: auto;
     border-left: 5px dotted #ff238e;
     border-bottom: 5px solid #13ABC4;
     background-color: #AEFEFFB3;
@@ -70,9 +85,7 @@ ul {
 
 p {
     max-width:70%;
-    display: table;
-    margin: 5px auto;
-    text-align: center;
+    margin: auto;
     border-left: 5px dotted #ff238e;
     border-bottom: 5px solid #13ABC4;
     background-color: #AEFEFFB3;
@@ -105,16 +118,22 @@ form {
 }
 
 fieldset {
-    border: 5px dashed #ff238e;
-    padding: 5px 5px 15px;
-    margin: 1rem;
+    border: 6px dashed #ff238e;
+    padding: 4px 4px 16px;
+    margin: 16px;
 }
 
 legend {
-  padding: 10px 15px 5px 15px;
-  font-size: 1rem;
+  padding: 10px 16px 4px 16px;
+  font-size: 1.2rem;
   text-shadow: -1px -1px 1px #13ABC4, 0px 0px 5px #13ABC4;
 }
+
+/*
+legend:hover {
+  text-shadow: -1px -1px 1px #ff238e, 0px 0px 5px #ff238e;
+}
+*/
 
 button {
     text-align: center;
@@ -165,7 +184,7 @@ input.text {
 
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 16px;
   background: #09183380;
   color: #bdbdbd;
 }
