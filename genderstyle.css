@@ -3,7 +3,7 @@
   }
 
 body {
-    max-width:50%;
+    max-width:800px;
     font-family: Monospace;
     background-color: #072227;
     color: #293462;
@@ -65,7 +65,7 @@ ul {
 }
 
 p {
-    max-width:80%;
+    max-width:70%;
     display: table;
     margin: 5px auto;
     text-align: center;
@@ -94,7 +94,7 @@ form {
     border-top: 10px double #ff238e;
     border-bottom: 10px solid #13ABC4;
     text-align: center;
-    max-width: 70%;
+    max-width: 50%;
     background-color: #AEFEFFD9;
     margin: auto;
     font-size: 1rem;
