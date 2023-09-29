@@ -1,0 +1,26 @@
+{
+    "weapons": [
+        {
+            "name": "",
+            "attack": [
+                {
+                    "past": "",
+                    "present": "",
+                    "pastpart": "",
+                    "prespart": ""
+                }
+            ],
+            "strength": "",
+            "weakness": "",
+            "image": "",
+            "alt": "",
+            "credit": ""
+        }
+    ],
+
+    "outcomes": [
+        {
+            "outcome":""
+        }
+    ]
+}
