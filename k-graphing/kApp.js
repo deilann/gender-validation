@@ -39,6 +39,7 @@ function populate() {
 }
 
 function kPlusPlus() {
+    autonomy.innerHTML = ''
     if (k > 49 ) {
         choiceHead.innerHTML += ' NO '
     } else {
@@ -50,6 +51,7 @@ function kPlusPlus() {
 }
 
 function kMinusMinus() {
+    autonomy.innerHTML = ''
     if (k < 2) {
         choiceHead.innerHTML += ' NO '
     } else {
@@ -61,6 +63,7 @@ function kMinusMinus() {
 }
 
 function kZero() {
+    autonomy.innerHTML = ''
     k.reset()
     choiceHead.innerHTML = 'Choose Wisely'
     kView.innerHTML = k
