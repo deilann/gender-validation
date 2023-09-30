@@ -29,9 +29,11 @@ function populate() {
         } else if (noWarns === 1) {
             details.innerHTML = 'I\'d ask again if you know what no means, but I\'ve already asked once.'
             noWarns++
-        } else {
+        } else if (noWarns < 10) {
             details.innerHTML = `Oh yay another warning to put with your other ${noWarns} warnings. It's kind of concerning how little you care about NO. (It means no.)` 
             noWarns++
+        } else {
+            window.location = './apologize.html';
         }
         
         noCount = 0
