@@ -34,8 +34,8 @@ function populate() {
                 
                 button.addEventListener("click", function(event) {
                     let choice = event.target
-                    // userChoice.innerHTML = choice.name
-                    // play(choice.value)
+                    userChoice.innerHTML = choice.name
+                    play(choice.value)
                 })
           })
     })

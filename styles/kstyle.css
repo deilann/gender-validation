@@ -1,28 +1,53 @@
+@import url(https://fonts.bunny.net/css?family=architects-daughter:400|beth-ellen:400|vt323:400|syne-mono:400);
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    max-width:800px;
-    font-family: Monospace;
+    max-width:1000px;
+    margin: auto;
+    font-family: "Syne Mono", monospace;
     background-color: #072227;
     color: #293462;
 }
 
+body::before {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #ab46d250;
+    z-index: -2;
+}
+
 /* headers */
 
-h1, h2 {
+h1, h2, h3 {
+    margin:auto;
     text-align: center;
-    font-variant: small-caps;
-    background-color: #aefeffd9; /* TODO */
+}
+
+h1, h2 {
+    background-color: #00fff9cc;
     border-radius: 25px;
-    text-shadow: -1px -1px #0abdc6, 1px 1px #7d12ff, 2px 2px #00fff9, 4px 4px #00b8ff, 6px 6px #ff238e, 9px 9px #ab46d2;
+    text-shadow:    -1px -1px #0abdc6,
+                     1px  1px #7d12ff,
+                     2px  2px #00fff9,
+                     4px  4px #00b8ff,
+                     6px  6px #ff238e,
+                     9px  9px #ab46d2;
 }
 
 h1 {
-    font-size: 3rem;
-    padding: 10px;
+    font-family: "beth ellen", handwriting;
+    font-size: 2.5rem;
     border-bottom: 10px solid #ff238e;
+    width: 75%;
 }
   
 h2 {
@@ -31,21 +56,12 @@ h2 {
     border-bottom: 5px solid #13ABC4;
     padding-top: 0px;
     padding-bottom: 5px;
+    width: 70%;
 }
 
-
-h2:hover {
-    color:#ff238e;
-    background-color:#7d12ff;
-    border-top: 5px solid #13ABC4;
-    border-bottom: 5px solid #ff238e;
-    text-shadow: -1px -1px #0abdc6, 1px 1px #7d12ff, 2px 2px #ff238e, 4px 4px #00b8ff, 6px 6px #00fff9, 9px 9px #ab46d2;
-}
-
-  
 h3 {
+    width: 70%;
     font-size: 1.25rem;
-    text-decoration: underline #ff238e wavy 1px;
 }
 
 h3:hover{
@@ -117,48 +133,15 @@ form {
     font-size: 1rem;
 }
 
-fieldset {
-    border: 6px dashed #ff238e;
-    padding: 4px 4px 16px;
-    margin: 16px;
-}
-
-legend {
-  padding: 10px 16px 4px 16px;
-  font-size: 1.2rem;
-  text-shadow: -1px -1px 1px #13ABC4, 0px 0px 5px #13ABC4;
-}
-
-legend:hover {
-  text-shadow: -1px -1px 1px #ff238e, 0px 0px 5px #ff238e;
-}
-
 button {
-    color:#00fff9;
-    background-color: #0abdc6;
+
+    color:#072227;
+    background: #00fff9cc;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
-    border-top: 4px solid #ff238e;
-    border-bottom: 4px solid #133e7c;
-    border-left: 4px solid #711c91;
-    border-right: 4px solid #711c91;
-    font-size: 1rem;
-    font-family: Monospace;
-    text-shadow:    0 0 5px #293462,
-                    0 0 5px #293462,
-                    0 0 5px #293462,
-                    0 0 5px #293462,
-                    0 0 5px #293462,
-                    0 0 5px #293462,
-                    0 0 5px #293462,
-                    0 0 5px #293462,
-                    0 0 5px #293462,
-                    0 0 5px #293462,
-                    0 0 5px #293462,
-                    0 0 5px #293462,
-                    0 0 5px #293462,
-                    0 0 5px #293462;  
+    border: 4px outset #ff238e;
+
 }
 
 .k-buttons{
@@ -166,14 +149,25 @@ button {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin:5px;
 
 }
 
+.choice-buttons {
+    width: 70%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
 button.modifier {
-    width: auto;
-    height: auto;
-    padding: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
     margin: 6px;
+    font-size: 1.5rem;
+    font-family: 'VT323', mono;
 }
 
 button.option {
@@ -182,7 +176,10 @@ button.option {
     align-items:center;
     width: 120px;
     height: 120px;
-    padding-bottom: 8px;
+    padding-bottom: 2px;
+    font-size: 1rem;
+    font-family: 'Beth Ellen', handwriting;
+    margin:8px;
 }
 
 input.text {
