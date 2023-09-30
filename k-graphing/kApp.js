@@ -53,7 +53,7 @@ function kPlusPlus() {
 }
 
 function kMinusMinus() {
-    if (k < 2) {
+    if (k < 1) {
         choiceHead.innerHTML += ' NO '
     } else {
         k.minusMinus()
