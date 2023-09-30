@@ -358,10 +358,101 @@
           "image": "url('../images/k/army.png')",
           "alt": "Badge from the Canadian Army Flag, a red and gold maple leaf over crossed swords.",
           "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Canadian_Army_Badge.svg\">Coach.nyta</a>, Public domain, via Wikimedia Commons"
-        }
+        },
 
+        {
+          "name": "yaseen",
+          "attack":
+              {
+                  "past": "punched",
+                  "present": "punch",
+                  "pastpart": "punched",
+                  "prespart": "punching"
+              },
+          "strength": "honest",
+          "weakness": "corrupt",
+          "image": "url('../images/k/yaseen.png')",
+          "alt": "an incredibly low resolution crop of yaseen's profile which is a bright neon delightful",
+          "credit": "By reading this post you agree to being an accomplice of the user @yassie_j@0w0.is in crimes committed against The State. This is irrevocable, constant, and cannot be undone."
+      },
 
+      {
+        "name": "POTATO",
+        "attack":
+            {
+                "past": "POTATOED",
+                "present": "POTATO",
+                "pastpart": "POTATOED",
+                "prespart": "POTATOING"
+            },
+        "strength": "POTATO",
+        "weakness": "RESEARCH",
+        "image": "url('../images/k/POTATO.png')",
+        "alt": "a POTATO growing some sprouts",
+        "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Russet_potato_cultivar_with_sprouts.jpg\">ZooFari</a>, Public domain, via Wikimedia Commons"
+    },
 
-    ]
+    {
+      "name": "JSON",
+      "attack":
+          {
+              "past": "injected",
+              "present": "inject",
+              "pastpart": "injected",
+              "prespart": "injecting"
+          },
+      "strength": "self-referential",
+      "weakness": "commentless",
+      "image": "url('../images/k/JSON.png')",
+      "alt": "the JSON-LD logo, three blue nodes in black brackets",
+      "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:JSON-LD.svg\">https://json-ld.org/ - Website content released under a Creative Commons CC0 Public Domain Dedication except where an alternate is specified.</a>, CC0, via Wikimedia Commons"
+  },
+          {
+    "name": "kittens",
+    "attack":
+        {
+            "past": "ambushed",
+            "present": "ambush",
+            "pastpart": "ambushed",
+            "prespart": "ambushing"
+        },
+    "strength": "evil",
+    "weakness": "lack of can opening skills",
+    "image": "url('../images/k/kittens.png')",
+    "alt": "five orange and calico kittens doing kitten stuff",
+    "credit": "https://www.publicdomainpictures.net/en/view-image.php?image=161630 George Hodan https://www.publicdomainpictures.net/en/browse-author.php?a=8245"
+},
+
+{
+  "name": "pun",
+  "attack":
+      {
+          "past": "salted",
+          "present": "salt",
+          "pastpart": "salted",
+          "prespart": "salting"
+      },
+  "strength": "punny",
+  "weakness": "impasta",
+  "image": "url('../images/k/pun.png')",
+  "alt": "an image of a Alaskan Klee Kai dog looking super pleased, often used for the meme pun dog",
+  "credit": "u/lawlissmodia"
+},
+
+{
+  "name": "hard labor",
+  "attack":
+      {
+          "past": "exploited",
+          "present": "exploit",
+          "pastpart": "exploited",
+          "prespart": "exploiting"
+      },
+  "strength": "survival",
+  "weakness": "undercompensated",
+  "image": "url('../images/k/hardLabor.png')",
+  "alt": "a yellow warning sign that warns about rapid movement of workpiece in press brake machine",
+  "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:ISO_7010_W032_warning;_rapid_movement_of_workpiece_in_press_brake_machine.svg\">Author</a>, CC0, via Wikimedia Commons"
+}    ]
 
 }
