@@ -134,43 +134,55 @@ legend:hover {
 }
 
 button {
-    text-align: center;
+    color:#00fff9;
     background-color: #0abdc6;
-    margin:auto;
-    display: block;
-    width: auto;
-    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
     border-top: 4px solid #ff238e;
     border-bottom: 4px solid #133e7c;
     border-left: 4px solid #711c91;
     border-right: 4px solid #711c91;
-    border-radius: 10px;
     font-size: 1rem;
     font-family: Monospace;
+    text-shadow:    0 0 5px #293462,
+                    0 0 5px #293462,
+                    0 0 5px #293462,
+                    0 0 5px #293462,
+                    0 0 5px #293462,
+                    0 0 5px #293462,
+                    0 0 5px #293462,
+                    0 0 5px #293462,
+                    0 0 5px #293462,
+                    0 0 5px #293462,
+                    0 0 5px #293462,
+                    0 0 5px #293462,
+                    0 0 5px #293462,
+                    0 0 5px #293462;  
 }
 
-button.button2 {
-    text-align: center;
-    text-shadow: -1px -1px 2px #ff6fb5, 1px 1px 2px #13ABC4;
-    color: #EEEEEE;
-    background-color: #176B87;
-    margin:auto;
-    display: block;
+.k-buttons{
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+button.modifier {
     width: auto;
-    padding: 10px;
-    border-top: 4px solid #ff6fb5;
-    border-bottom: 4px solid #711c91;
-    border-left: 4px solid #13ABC4;
-    border-right: 4px solid #13ABC4;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-family: Monospace;
+    height: auto;
+    padding: 20px;
+    margin: 6px;
 }
 
-button.button2:hover {
-    background-color: transparent;
-    text-shadow: 0px 12px 1px #13ABC4, 0px -12px 1px #13ABC4, 0px 6px 1px #ff6fb5, 0px -6px 1px #ff6fb5;
-    border: none;
+button.option {
+    display:flex;
+    flex-direction:column-reverse;
+    align-items:center;
+    width: 120px;
+    height: 120px;
+    padding-bottom: 8px;
 }
 
 input.text {

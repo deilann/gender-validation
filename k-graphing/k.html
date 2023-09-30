@@ -2,27 +2,26 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="../styles/genderstyle.css">
+        <link rel="stylesheet" href="../styles/kstyle.css">
         <title>k</title>
     </head>
     <body>
-        <div id="k-container">
-            <h1>k = <span class="display" id="k-display"></span></h1>
-            <button onclick="kPlusPlus()" class="modifier" id="k-modifier">k++</button>
+        <div class="k-header" id="k-container">
+            <h1>k = <span class="k-modifiers" id="k-display"></span></h1>
         </div>
-        
-            <h2>Choose Wisely</h2>
-        <div id="buttons"></div>
+            <div class="k-buttons" id="k-buttons-container">
+            <button onclick="kPlusPlus()" class="modifier" id="kPlus">k++</button>
+            <button onclick="kZero()" class="modifier" id="kZero">k=0</button>
+            <button onclick="kMinusMinus()" class="modifier" id="kMinus">k--</button>
+            </div>
+        </div>
+        <div class="display" id="choosing"><h2><span id="choice-header"></h2></span></div>
+        <div class="display" id="life-choices">
 
-
-<!--         
-        <button class="option" name="rock" value=0>rock</button>
-        <button class="option" name="paper" value=1>paper</button>
-        <button class="option" name="scissors" value=2>scissors</button>
-        <h2>Computer Choice: <span class="display" id="computer-choice"></span></h2>
-        <h2>Your Choice: <span class="display" id="user-choice"></span></h2>
-        <h2>Outcome: <span class="display" id="outcome"></span></h2> -->
- 
+        </div>
+        <div class="k-buttons" id="buttons-home"></div>
+        </div>
+        <script src="k_classes.js" charset="utf-8"></script>
         <script src="kApp.js" charset="utf-8"></script>
     </body>
 </html>

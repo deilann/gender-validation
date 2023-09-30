@@ -13,7 +13,7 @@
             ],
             "strength": "heavy",
             "weakness": "brittle",
-            "image": "rock.png",
+            "image": "images/rock.png",
             "alt": "A pretty sharp and deadly looking rock.",
             "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Pebble_MET_sf17-193-196s3.jpg\">Metropolitan Museum of Art</a>, CC0, via Wikimedia Commons"
         },
@@ -30,7 +30,7 @@
             ],
             "strength": "sneaky",
             "weakness": "floppy",
-            "image": "paper.png",
+            "image": "images/paper.png",
             "alt": "A crumpled ball of paper.",
             "credit": "found on PublicDomainPictures.net but fairly certain the original photo was taken by Porjai after some research: https://www.shutterstock.com/g/porjai+kittawornrat"
         },
@@ -83,7 +83,7 @@
             ],
             "strength": "omnipresent",
             "weakness": "toxic af",
-            "image": "pollution.png",
+            "image": "images/pollution.png",
             "alt": "Pink polluting smoke stacks.",
             "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:CHIMNEYS_OF_U.S._STEEL_PLANT_EMIT_SMOKE_24_HOURS_A_DAY_-_NARA_-_545435.jpg\">LeRoy Woodson</a>, Public domain, via Wikimedia Commons"
         },
@@ -100,7 +100,7 @@
             ],
             "strength": "united",
             "weakness": "vulnerable",
-            "image": "village.png",
+            "image": "images/village.png",
             "alt": "A circular cropped photo of a village with red roofed houses and a spire.",
             "credit":"<a href=\"https://commons.wikimedia.org/wiki/File:Small_town_red_roofs_(Unsplash).jpg\">David Marcu davidmarcu</a>, CC0, via Wikimedia Commons"
 
@@ -118,7 +118,7 @@
             ],
             "strength": "elevating", 
             "weakness": "flimsy",
-            "image": "ladder.png",
+            "image": "images/ladder.png",
             "alt": "The top of a yellow step ladder.",
             "credit":"Video Girl: https://www.publicdomainpictures.net/en/view-image.php?image=264820&picture=window-cleaners-step-ladders"
           },
@@ -136,7 +136,7 @@
             ],
             "strength": "efficient",
             "weakness": "fragile",
-            "image": "computer.png",
+            "image": "images/computer.png",
             "alt": "A white Apple eMac, a computer and a CRT monitor all in one.",
             "credit":"<a href=\"https://commons.wikimedia.org/wiki/File:Apple-eMac-FL.jpg\">Evan-Amos</a>, Public domain, via Wikimedia Commons"
           },
@@ -153,7 +153,7 @@
             ],
             "strength": "insightful",
             "weakness": "biased",
-            "image": "history.png",
+            "image": "images/history.png",
             "alt": "A black and white photo of a cat with a mostly obscured birthday cake.",
             "credit":"Frees, H. W., photographer. (ca. 1914) The Birthday Cake. , ca. 1914. June 24. [Photograph] Retrieved from the Library of Congress, https://www.loc.gov/item/2013648266/."
           }
