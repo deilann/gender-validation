@@ -1,14 +1,4 @@
-variety
-cancer
-surgery
-affair
-magazine
-salad
-association
-theory
-video
-strategy
-phone
+
 income
 tea
 property

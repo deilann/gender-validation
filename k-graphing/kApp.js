@@ -101,3 +101,5 @@ function play(node) {
     outcomes[2] = `You shouldn't have chosen ${weapons_info[node]['name']}. Its ${weapons_info[node]['weakness']} nature was quickly exploited by your opponent ${weapons_info[selector]['attack']['prespart']} you until they achieved one ${weapons_info[selector]['strength']} victory.`
     autonomy.innerHTML = outcomes[k.makeDiff(node, selector)]
 }
+
+populate()
