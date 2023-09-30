@@ -40,6 +40,10 @@ class oddInteger {
     }
 
     makeDiff(a, b) {
-        return (((a - b) % this.#n) + this.#n) % this.#n
+        if (this.#k === 0) {
+            return 0
+        } else {
+        return Math.ceil(((((a - b) % this.#n) + this.#n) % this.#n)/this.#k)
+        }
     }
 }

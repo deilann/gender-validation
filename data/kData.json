@@ -3,34 +3,32 @@
 
         {
             "name": "rock",
-            "attack": [
+            "attack":
                 {
                     "past": "bludgeoned",
                     "present": "bludgeon",
                     "pastpart": "bludgeoned",
                     "prespart": "bludgeoning"
-                }
-            ],
+                },
             "strength": "heavy",
             "weakness": "brittle",
-            "image": "images/rock.png",
+            "image": "url('../images/k/rock.png')",
             "alt": "A pretty sharp and deadly looking rock.",
             "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Pebble_MET_sf17-193-196s3.jpg\">Metropolitan Museum of Art</a>, CC0, via Wikimedia Commons"
         },
 
         {
             "name": "paper",
-            "attack": [
+            "attack":
                 {
                     "past":"paper cut",
                     "present":"paper cut",
                     "pastpart":"paper cut",
                     "prespart":"paper cutting"
-                }
-            ],
+                },
             "strength": "sneaky",
             "weakness": "floppy",
-            "image": "images/paper.png",
+            "image": "url('../images/k/paper.png')",
             "alt": "A crumpled ball of paper.",
             "credit": "found on PublicDomainPictures.net but fairly certain the original photo was taken by Porjai after some research: https://www.shutterstock.com/g/porjai+kittawornrat"
         },
@@ -38,17 +36,16 @@
         {
             "name": "scissors",
 
-            "attack": [
+            "attack":
                 {
                     "past":"stabbed",
                     "present":"stab",
                     "pastpart":"stabbed",
                     "prespart":"stabbing"
-                }
-            ],
+                },
             "strength": "pointy",
             "weakness": "exclusionary",
-            "image": "images/scissors.png",
+            "image": "url('../images/k/scissors.png')",
             "alt": "A pair of orange-handled right-handed Fiskars scissors",
             "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Large-scissors.jpg\">Evan-amos</a>, Public domain, via Wikimedia Commons"
         },
@@ -56,51 +53,47 @@
         {
             "name": "cookie",
             "attack":
-            [
                 {
                     "past": "tempted",
                     "present": "tempt",
                     "pastpart": "tempted",
                     "prespart": "tempting"
-                }   
-            ],
+                },
             "strength": "delicious",
             "weakness": "crumbly",
-            "image": "images/cookie.png",
+            "image": "url('../images/k/cookie.png')",
             "alt": "A single Nantucket Pepperidge Farm chocolate chip cookie",
             "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Pep-Farm-Cookie-Alt.jpg\">Evan-Amos</a>, CC0, via Wikimedia Commons"
         },
 
         {
             "name": "pollution",
-            "attack": [
+            "attack":
               {
                 "past": "contaminated",
                 "present": "contaminate",
                 "pastpart": "contaminated", 
                 "prespart": "contaminating"
-              }
-            ],
+              },
             "strength": "omnipresent",
             "weakness": "toxic af",
-            "image": "images/pollution.png",
+            "image": "url('../images/k/pollution.png')",
             "alt": "Pink polluting smoke stacks.",
             "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:CHIMNEYS_OF_U.S._STEEL_PLANT_EMIT_SMOKE_24_HOURS_A_DAY_-_NARA_-_545435.jpg\">LeRoy Woodson</a>, Public domain, via Wikimedia Commons"
         },
 
         {
             "name": "village",
-            "attack": [
+            "attack":
                 {
                 "past": "swarmed",
                 "present": "swarm",  
                 "pastpart": "swarmed",
                 "prespart": "swarming"
-                }
-            ],
+                },
             "strength": "united",
             "weakness": "vulnerable",
-            "image": "images/village.png",
+            "image": "url('../images/k/village.png')",
             "alt": "A circular cropped photo of a village with red roofed houses and a spire.",
             "credit":"<a href=\"https://commons.wikimedia.org/wiki/File:Small_town_red_roofs_(Unsplash).jpg\">David Marcu davidmarcu</a>, CC0, via Wikimedia Commons"
 
@@ -108,17 +101,16 @@
 
         {
             "name": "ladder",
-            "attack": [
+            "attack":
               {
                 "past": "struck",
                 "present": "strike",
                 "pastpart": "struck",
                 "prespart": "striking"
-              }
-            ],
+              },
             "strength": "elevating", 
             "weakness": "flimsy",
-            "image": "images/ladder.png",
+            "image": "url('../images/k/ladder.png')",
             "alt": "The top of a yellow step ladder.",
             "credit":"Video Girl: https://www.publicdomainpictures.net/en/view-image.php?image=264820&picture=window-cleaners-step-ladders"
           },
@@ -126,45 +118,136 @@
           {
             "name": "computer",
 
-            "attack": [
+            "attack":
               {
                 "past": "processed",
                 "present": "process",
                 "pastpart": "processed",
                 "prespart": "processing"
-              }
-            ],
+              },
             "strength": "efficient",
             "weakness": "fragile",
-            "image": "images/computer.png",
+            "image": "url('../images/k/computer.png')",
             "alt": "A white Apple eMac, a computer and a CRT monitor all in one.",
             "credit":"<a href=\"https://commons.wikimedia.org/wiki/File:Apple-eMac-FL.jpg\">Evan-Amos</a>, Public domain, via Wikimedia Commons"
           },
 
           {
             "name": "history",
-            "attack": [
+            "attack":
               {
                 "past": "documented",
                 "present": "document",
                 "pastpart": "documented",
                 "prespart": "documenting"
-              }
-            ],
+              },
             "strength": "insightful",
             "weakness": "biased",
-            "image": "images/history.png",
+            "image": "url('../images/k/history.png')",
             "alt": "A black and white photo of a cat with a mostly obscured birthday cake.",
             "credit":"Frees, H. W., photographer. (ca. 1914) The Birthday Cake. , ca. 1914. June 24. [Photograph] Retrieved from the Library of Congress, https://www.loc.gov/item/2013648266/."
+          },
+
+          {
+            "name": "beer",
+          
+            "attack":
+              {
+                "past": "splashed",
+                "present": "splash",
+                "pastpart": "splashed",
+                "prespart": "splashing"
+              },
+          
+            "strength": "satisfying",
+            "weakness": "impairing",
+          
+            "image": "url('../images/k/beer.png')",
+            "alt": "A yellow frothy beer in a clear glass.",
+            "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:NCI_Visuals_Food_Beer.jpg\">Len Rizzi (photographer)</a>, Public domain, via Wikimedia Commons"
+          
+          },
+
+          {
+            "name": "tooth",
+          
+            "attack": 
+              {
+                "past": "chomped",
+                "present": "chomp",
+                "pastpart": "chomped",
+                "prespart": "chomping" 
+              },
+          
+            "strength": "sharp",
+            "weakness": "sensitive",
+          
+            "image": "url('../images/k/tooth.png')",
+            "alt": "A giant megalodon tooth.",
+            "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Megalodon_tooth_ruler.jpg\">First uploader (User:TomCatX) is the author by using an image from User:Lonfat</a>, Public domain, via Wikimedia Commons"
+          
+          },
+
+          {
+            "name": "signature",
+          
+            "attack":
+              {
+                "past": "signed away",
+                "present": "sign away",
+                "pastpart": "signed away",
+                "prespart": "signing away"
+              },
+          
+            "strength": "binding",
+            "weakness": "forgeable",
+          
+            "image": "url('../images/k/signature.png')",
+            "alt": "Leonhard Euler's signature, but broken up into two lines.",
+            "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Euler%27s_signature.png\">Leonhard Euler</a>, Public domain, via Wikimedia Commons"
+          
+          },
+
+          {
+            "name": "coffee",
+          
+            "attack":
+              {
+                "past": "scalded",
+                "present": "scald",
+                "pastpart": "scalded",
+                "prespart": "scalding"
+              },
+          
+            "strength": "energizing",
+            "weakness": "addictive",
+          
+            "image": "url('../images/k/coffee.png')",
+            "alt": "A bluish white round cup full of coffee with foam art.",
+            "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Coffee_in_cup_amenable_to_easy_cup_colour_changes_such_that_it_still_looks_like_an_unaltered_coffee-in-cup_photo.xcf\">MarkJFernandes</a>, CC0, via Wikimedia Commons"
+          
+          },
+
+          {
+            "name": "poem",
+          
+            "attack":
+              {
+                "past": "provoked",
+                "present": "provoke",
+                "pastpart": "provoked",
+                "prespart": "provoking"
+              },
+          
+            "strength": "expressive",
+            "weakness": "abstract",
+          
+            "image": "url('../images/k/poem.png')",
+            "alt": "A rose on a cream background with illegible words taken from a postcard of James Whitcomb Riley poem.",
+            "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Postcard_of_James_Whitcomb_Riley_poem,_Riley_roses_-_DPLA_-_f2ce633297b0eb860dd817d9a9630936_(page_1).jpg\">Indiana State Library and Historical Bureau</a>, Public domain, via Wikimedia Commons" 
+          
           }
 
-    ],
-
-    "outcomes": [
-        {
-            "win":"Your clever choice of {userWeapon} allows you to triumph over your opponent. A quick {userAttackPresent} exploits the {computerWeakness} nature of your opponent's {computerWeapon}. The {userStrength} always prevail.",
-            "lose":"You shouldn't have chosen a {userWeapon}. Its {userWeakness} was quickly exploited by your opponent {computerAttackPresPart} in a a quick and {computerStrength} victory.",
-            "tie": "... {userWeapon} ... more like a {userStrength} and {userWeakness} Spiderman meme."
-        }
     ]
+
 }

@@ -7,9 +7,9 @@
 body {
     max-width:1000px;
     margin: auto;
-    font-family: "Syne Mono", monospace;
-    background-color: #072227;
-    color: #293462;
+    font-family: "VT323", mono;
+    background-color: #0B0835;
+    color: #060b11;
 }
 
 body::before {
@@ -21,7 +21,7 @@ body::before {
     right: 0;
     width: 80%;
     height: 100%;
-    background-color: #ab46d250;
+    background-color: #170055;
     z-index: -2;
 }
 
@@ -33,114 +33,51 @@ h1, h2, h3 {
 }
 
 h1, h2 {
-    background-color: #00fff9cc;
-    border-radius: 25px;
-    text-shadow:    -1px -1px #0abdc6,
-                     1px  1px #7d12ff,
-                     2px  2px #00fff9,
-                     4px  4px #00b8ff,
-                     6px  6px #ff238e,
-                     9px  9px #ab46d2;
+
+    color: #040026;
+    text-shadow:     1px  1px 1px #9336B4,
+                     2px  2px 1px #F037A5,
+                     2px  2px 2px #00f3fc,
+                     3px  3px 2px #0097ec,
+                     4px  4px 1px #F037A5,
+                     5px  5px 2px #6c1fd3,
+                     6px  6px 2px #040026;
 }
 
 h1 {
-    font-family: "beth ellen", handwriting;
-    font-size: 2.5rem;
-    border-bottom: 10px solid #ff238e;
-    width: 75%;
+    background: #F037A5;
+    border-bottom: 10px double #00f3fc;
+    border-top: 10px double #00f3fc;
+    font-size: 4rem;
+    width: 80%;
+    padding-bottom: 5px;
+    margin-top: 10px;
 }
   
 h2 {
-    font-size: 2.5rem;
-    border-top: 5px solid #ff238e;
-    border-bottom: 5px solid #13ABC4;
+    background: #F037A5;
+    border-bottom: 10px double #00f3fc;
+    border-top: 10px double #00f3fc;
+    font-size: 3rem;
     padding-top: 0px;
     padding-bottom: 5px;
-    width: 70%;
+    width: 80%;
 }
 
 h3 {
-    width: 70%;
-    font-size: 1.25rem;
-}
-
-h3:hover{
-    text-decoration:none;
-}
-
-/* links */
-
-a:link {
-    color:#7d12ff;
-}
-
-a:visited{
-    color:#072227;
-}
-
-.footer:visited{
-    color: #00b8ff;
-}
-
-a:hover{
-    color:#ff238e;
-}
-
-
-
-ul {
-    display: table;
+    color:#00f3fc;
+    width: 65%;
+    padding:10px;
+    font-size: 2rem;
     margin: auto;
-    border-left: 5px dotted #ff238e;
-    border-bottom: 5px solid #13ABC4;
-    background-color: #AEFEFFB3;
-    border-radius: 5px;
-    padding: 10px;
-    list-style-type: none;
-}
-
-p {
-    max-width:70%;
-    margin: auto;
-    border-left: 5px dotted #ff238e;
-    border-bottom: 5px solid #13ABC4;
-    background-color: #AEFEFFB3;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-img {
-    display: table;
-    margin: auto;
-    padding: 10px;
-    background-color: #ff6fb5;
-    border-radius: 5px;
-    border: 5px solid #13ABC4;
-}
-
-form {
-    padding: 0px 5px 15px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top: 10px double #ff238e;
-    border-bottom: 10px solid #13ABC4;
-    text-align: center;
-    max-width: 70%;
-    background-color: #AEFEFFD9;
-    margin: auto;
-    font-size: 1rem;
 }
 
 button {
 
-    color:#072227;
-    background: #00fff9cc;
-    background-position: center;
-    background-repeat: no-repeat;
+    
+
     border-radius: 50%;
-    border: 4px outset #ff238e;
+    
 
 }
 
@@ -151,6 +88,7 @@ button {
     justify-content: center;
     margin:5px;
 
+
 }
 
 .choice-buttons {
@@ -159,34 +97,34 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+
 }
 
 button.modifier {
-    width: 50px;
-    height: 50px;
+
     padding: 5px;
     margin: 6px;
-    font-size: 1.5rem;
-    font-family: 'VT323', mono;
+    font-size: 2rem;
+    font-family: "VT323", mono;
+    background: #00f3fc;
+    border: 6px outset #F037A5;
+
 }
 
 button.option {
     display:flex;
     flex-direction:column-reverse;
     align-items:center;
-    width: 120px;
-    height: 120px;
+    width: 128px;
+    height: 128px;
     padding-bottom: 2px;
     font-size: 1rem;
     font-family: 'Beth Ellen', handwriting;
-    margin:8px;
-}
-
-input.text {
-    text-align: center;
-    max-width: 80%;
-    background-image: linear-gradient(90deg, rgba(19,171,196,1) 0%, rgba(255,111,181,1) 20%, rgba(255,255,255,1) 50%, rgba(255,111,181,1) 80%, rgba(19,171,196,1) 100%);
-    border-radius: 5px;
+    margin:12px;
+    background: #00f3fc;
+    border: 10px outset #FF3FA4;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 footer {
