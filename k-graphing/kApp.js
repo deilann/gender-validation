@@ -10,6 +10,7 @@ kView.innerHTML = k
 choiceHead.innerHTML = 'Choose Wisely'
 
 function populate() {
+    choiceHead.innerHTML = 'Choose Wisely'
     weapons_info = []
     fetch(JSON_PATH)
         .then(res => res.json())
