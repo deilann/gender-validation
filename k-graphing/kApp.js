@@ -4,6 +4,7 @@ const choiceHead = document.getElementById('choice-header')
 const buttonContainer = document.getElementById('buttons-home')
 const autonomy = document.getElementById('autonomy')
 const automaton = document.getElementById('automaton')
+const details = document.getElementById('details')
 
 let weapons_info = []
 const k = new oddInteger()
@@ -12,6 +13,7 @@ let wins = []
 let losses = []
 let ties = []
 choiceHead.innerHTML = 'Choose Wisely'
+automaton.innerHTML = `★ wins ${wins.length} ★ losses ${losses.length} ★ ties ${ties.length} ★`
 let totalOptions
 
 function populate() {
@@ -103,12 +105,21 @@ function play(node) {
     if (!k.makeDiff(node, selector)) {
         autonomy.innerHTML = `... ${weapons_info[node]['name']} and ${weapons_info[node]['name']} ... more like a ${weapons_info[node]['strength']} and ${weapons_info[node]['weakness']} Spiderman meme.`
         ties.push(weapons_info[node]['name'])
+        if (ties.length % 5 === 0) {
+            details.innerHTML = `Has ${ties[Math.floor(Math.random() * ties.length)]} ever managed to make any impact?`
+        }
     } else if (k.makeDiff(node, selector) === 1) {
         autonomy.innerHTML = `Your clever choice of ${weapons_info[node]['name']} allows you to triumph. Choosing ${weapons_info[selector]['name']}? Really? A quick ${weapons_info[node]['attack']['present']} exploits your opponent's ${weapons_info[selector]['weakness']} nature. The ${weapons_info[node]['strength']} always prevail.`
         wins.push(weapons_info[node]['name'])
+        if (wins.length % 5 === 0) {
+            details.innerHTML = `When are you going to let ${wins[Math.floor(Math.random() * wins.length)]} retire?`
+        }
     } else {
         autonomy.innerHTML = `You shouldn't have chosen ${weapons_info[node]['name']}. Its ${weapons_info[node]['weakness']} nature was quickly exploited by your opponent ${weapons_info[selector]['attack']['prespart']} you until they achieved one ${weapons_info[selector]['strength']} victory.`
         losses.push(weapons_info[node]['name'])
+        if (losses.length % 5 === 0) {
+            details.innerHTML = `Do you think ${losses[Math.floor(Math.random() * losses.length)]} still has hope?`
+        }
     }
 
     automaton.innerHTML = `★ wins ${wins.length} ★ losses ${losses.length} ★ ties ${ties.length} ★`
