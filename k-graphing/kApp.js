@@ -12,6 +12,8 @@ kView.innerHTML = k
 let wins = []
 let losses = []
 let ties = []
+let noCount = 0
+let noWarns = 0
 choiceHead.innerHTML = 'Choose Wisely'
 automaton.innerHTML = `★ wins ${wins.length} ★ losses ${losses.length} ★ ties ${ties.length} ★`
 let totalOptions
@@ -20,6 +22,21 @@ function populate() {
     buttonContainer.textContent = ''
     choiceHead.innerHTML = 'Choose Wisely'
     weapons_info = []
+    if (noCount > 5) {
+        if (!noWarns) {
+            details.innerHTML = 'Do you know what no means?'
+            noWarns++
+        } else if (noWarns === 1) {
+            details.innerHTML = 'I\'d ask again if you know what no means, but I\'ve already asked once.'
+            noWarns++
+        } else {
+            details.innerHTML = `Oh yay another warning to put with your other ${noWarns} warnings. It's kind of concerning how little you care about NO. (It means no.)` 
+            noWarns++
+        }
+        
+        noCount = 0
+        
+    }
     fetch(JSON_PATH)
         .then(res => res.json())
         .then(data => {
@@ -52,6 +69,7 @@ function kPlusPlus() {
     
     if (k >= Math.floor((totalOptions-1)/2)) {
         choiceHead.innerHTML += ' NO '
+        noCount++
     } else {
     k.plusPlus()
     kView.innerHTML = k
@@ -64,6 +82,7 @@ function kPlusPlus() {
 function kMinusMinus() {
     if (k < 1) {
         choiceHead.innerHTML += ' NO '
+        noCount++
     } else {
         k.minusMinus()
         kView.innerHTML = k
