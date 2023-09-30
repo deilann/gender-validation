@@ -25,6 +25,21 @@ body::before {
     z-index: -1;
 }
 
+body::after {
+    content: "";
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height:100%;
+    background-color: #F037A5;
+    z-index: -2;
+    border-left: 20px dashed #00f3fc;
+    border-right: 20px dashed #00f3fc;
+}
+
 /* headers */
 
 h1, h2, h3 {
