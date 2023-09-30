@@ -33,7 +33,7 @@ function populate() {
             details.innerHTML = `Oh yay another warning to put with your other ${noWarns} warnings. It's kind of concerning how little you care about NO. (It means no.)` 
             noWarns++
         } else {
-            window.location = './apologize.html';
+            window.location.pathname = '/k-graphing/apologize.html';
         }
         
         noCount = 0
