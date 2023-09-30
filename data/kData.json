@@ -278,7 +278,89 @@
           "image": "url('../images/k/pizza.png')",
           "alt": "A Pizza Quattro Stagioni seen from slightly above.",
           "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Pizza_Quattro_Stagioni_transparent.png\">Florian838</a>, CC0, via Wikimedia Commons"
-      }
+      },
+
+      {
+          "name": "funeral",
+          "attack":
+            {
+              "past": "buried",    
+              "present": "bury",    
+              "pastpart": "buried",    
+              "prespart": "burying"    
+            },
+          "strength": "cathartic",    
+          "weakness": "depressing",
+          "image": "url('../images/k/funeral.png')",
+          "alt": "A small portion of a circa 1920 portrait of a deseased woman in an open casket.",
+          "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Begr%C3%A4bnis-Trauerzug-um-1900.jpg\">Unbekannt</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/de/deed.en\">CC BY-SA 3.0 de</a>, via Wikimedia Commons"
+      },
+
+      {
+          "name": "thanks",
+          "attack":
+              {
+                  "past": "obligated",
+                  "present": "obligate",
+                  "pastpart": "obligated",
+                  "prespart": "obligating"
+              },
+          "strength": "thoughtful",
+          "weakness": "awkward",
+          "image": "url('../images/k/thanks.png')",
+          "alt": "Thank you written in rainbow letters.",
+          "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Thank_you_capitals.jpg\">Amousey</a>, CC0, via Wikimedia Commons"
+    },
+
+        {
+          "name": "guitar",
+          "attack":
+              {
+                  "past": "annoyed",
+                  "present": "annoy",
+                  "pastpart": "annoyed",
+                  "prespart": "annoying"
+              },
+          "strength": "melodic",
+          "weakness": "badly-played",
+          "image": "url('../images/k/guitar.png')",
+          "alt": "The body of a red Jason Ellis Showmaster signature guitar guitar tilted to the right.",
+          "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Showmaster-jason-ellis.jpg\">Denis Bratchuk (me)</a>, Public domain, via Wikimedia Commons"
+        },
+
+        {
+          "name": "elevator",
+          "attack":
+              {
+                  "past": "trapped",
+                  "present": "trap",
+                  "pastpart": "trapped",
+                  "prespart": "trapping"
+              },
+          "strength": "convenient",
+          "weakness": "claustrophobic",
+          "image": "url('../images/k/elevator.png')",
+          "alt": "A hot pink stick figure elevator sign.",
+          "credit": "Adapted from <a href=\"https://commons.wikimedia.org/wiki/File:Elevator_(Madrid_Metro).svg\">User:FedericoMP</a>, Public domain, via Wikimedia Commons"
+        },
+        
+        {
+          "name": "army",
+          "attack":
+              {
+                  "past": "overwhelmed",
+                  "present": "overwhelm",
+                  "pastpart": "overwhelmed",
+                  "prespart": "overwhelming"
+              },
+          "strength": "disciplined",
+          "weakness": "hierarchical",
+          "image": "url('../images/k/army.png')",
+          "alt": "Badge from the Canadian Army Flag, a red and gold maple leaf over crossed swords.",
+          "credit": "<a href=\"https://commons.wikimedia.org/wiki/File:Canadian_Army_Badge.svg\">Coach.nyta</a>, Public domain, via Wikimedia Commons"
+        }
+
+
 
     ]
 

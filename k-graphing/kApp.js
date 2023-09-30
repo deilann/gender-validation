@@ -8,6 +8,7 @@ let weapons_info = []
 const k = new oddInteger()
 kView.innerHTML = k
 choiceHead.innerHTML = 'Choose Wisely'
+let totalOptions
 
 function populate() {
     buttonContainer.textContent = ''
@@ -16,7 +17,8 @@ function populate() {
     fetch(JSON_PATH)
         .then(res => res.json())
         .then(data => {
-            let mixer = Array.from({ length: data['weapons'].length }, (value, index) => index)
+            totalOptions = data['weapons'].length
+            let mixer = Array.from({ length: totalOptions }, (value, index) => index)
             let mixed = mixer.sort(function(){ return 0.5 - Math.random() })
             let picks = mixed.slice(0,k.getN())
 
@@ -42,7 +44,7 @@ function populate() {
 
 function kPlusPlus() {
     
-    if (k > 49 ) {
+    if (k >= Math.floor((totalOptions-1)/2)) {
         choiceHead.innerHTML += ' NO '
     } else {
     k.plusPlus()
