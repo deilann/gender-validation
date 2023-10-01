@@ -20,6 +20,7 @@ let totalOptions
 
 function populate() {
     buttonContainer.textContent = ''
+    details.innerHTML = ''
     choiceHead.innerHTML = 'Choose Wisely'
     weapons_info = []
     if (noCount > 5) {
