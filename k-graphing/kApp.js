@@ -124,7 +124,7 @@ function play(node) {
     makeDudButton(node)
     makeDudButton(selector)
     if (!k.makeDiff(node, selector)) {
-        autonomy.innerHTML = `... ${weapons_info[node]['name']} and ${weapons_info[node]['name']} ... more like a ${weapons_info[node]['strength']} and ${weapons_info[node]['weakness']} Spiderman meme.`
+        autonomy.innerHTML = `... ${weapons_info[node]['name']} and ${weapons_info[node]['name']} ... more like one ${weapons_info[node]['strength']} and ${weapons_info[node]['weakness']} Spiderman meme.`
         ties.push(weapons_info[node]['name'])
         if (ties.length % 5 === 0) {
             details.innerHTML = `Has ${ties[Math.floor(Math.random() * ties.length)]} ever managed to make any impact?`
