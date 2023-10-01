@@ -136,7 +136,7 @@ function play(node) {
             details.innerHTML = `When are you going to let ${wins[Math.floor(Math.random() * wins.length)]} retire?`
         }
     } else {
-        autonomy.innerHTML = `You shouldn't have chosen ${weapons_info[node]['name']}. Its ${weapons_info[node]['weakness']} nature was quickly exploited by your opponent ${weapons_info[selector]['attack']['prespart']} you until they achieved one ${weapons_info[selector]['strength']} victory.`
+        autonomy.innerHTML = `You shouldn't have chosen ${weapons_info[node]['name']}. That choice comes is too ${weapons_info[node]['weakness']} which can be exploited by your opponent ${weapons_info[selector]['attack']['prespart']} you until they achieve their ${weapons_info[selector]['strength']} victory.`
         losses.push(weapons_info[node]['name'])
         if (losses.length % 5 === 0) {
             details.innerHTML = `Do you think ${losses[Math.floor(Math.random() * losses.length)]} still has hope?`
