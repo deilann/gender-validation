@@ -93,10 +93,11 @@ form {
     border: 10px solid #00f3fc;
     width: 60%;
     margin: auto;
+    margin-bottom: 15px;
     padding-bottom: 5px;
     text-align: center;
     background-color: #9336B4;
-
+    
 }
 
 .form-name {
