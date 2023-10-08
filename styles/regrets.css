@@ -1,0 +1,213 @@
+@import url(https://fonts.bunny.net/css?family=beth-ellen:400|lacquer:400|vt323:400);
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+    max-width:1000px;
+    margin: auto;
+    font-family: "VT323", mono;
+    background-color: #0B0835;
+    color: #060b11;
+}
+
+body::before {
+
+    max-width:1100px;
+    content: "";
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height:100%;
+    background-color: #170055;
+    z-index: -1;
+
+}
+
+body::after {
+
+    max-width:1100px;
+    content: "";
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height:100%;
+    background-color: #F037A5;
+    z-index: -2;
+    border-left: 20px dashed #00f3fc;
+    border-right: 20px dashed #00f3fc;
+
+}
+
+h1 {
+
+    font-family: 'Beth Ellen', handwriting;
+    margin:auto;
+    text-align: center;
+    color: #040026;
+    text-shadow:     1px  1px 1px #9336B4,
+                     2px  2px 1px #F037A5,
+                     2px  2px 2px #00f3fc,
+                     3px  3px 2px #0097ec,
+                     4px  4px 1px #F037A5,
+                     5px  5px 2px #6c1fd3,
+                     6px  6px 2px #040026;
+    background: linear-gradient(
+        -45deg,
+        #00f3fc 0%,
+        #9336B4 10%,
+        #F037A5 20%,
+        #F037A5 50%, 
+        #F037A5 80%, 
+        #9336B4 90%,
+        #00f3fc);
+    border: 7px outset #00f3fc;
+    font-size: 4rem;
+    width: 80%;
+    padding: 5px;
+    margin-top: 20px;
+
+}
+
+.instructions {
+
+    color:#00f3fc;
+    font-size: 2rem;
+    margin: 25px auto;
+    text-align: center;
+    text-shadow: 0px 2px 3px #F037A5;
+
+}
+
+form {
+
+    border: 10px solid #00f3fc;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #9336B4;
+
+}
+
+.form-name {
+
+    font-size: 3rem;
+    background-color: #F037A5;
+    margin: auto;
+    border-bottom: 10px double #00f3fc;
+    font-family: 'Lacquer', display;
+    text-shadow:     1px  1px 0px #F037A5,
+                     2px  2px 1px #00f3fc,
+                     3px  3px 1px #9336B4;
+
+}
+
+fieldset {
+
+    border: none;
+    border-top: 2px dashed #00f3fc;
+    margin: 0px auto;
+
+}
+
+label, legend {
+
+    display: block;
+    padding-bottom: 5px;
+    font-size: 2rem;
+    text-shadow:     1px  1px 0px #060b11,
+                     2px  2px 1px #9336B4,
+                     3px  3px 1px #F037A5;
+
+}
+
+input, select, textarea {
+
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "VT323", mono;
+    opacity:.8;
+    background-color: #F037A5cc;
+    border: 4px solid #00f3fc;
+    width: 80%;
+
+}
+
+input[type=number] {
+
+  -moz-appearance: textfield;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+
+  -webkit-appearance: none;
+  margin: 0;
+
+}
+
+legend {
+
+    padding: 10px;
+    margin: 20px 30px 10px 30px;
+    font-size: 1.5rem;
+    border-left: 2px dashed #00f3fc;
+    border-right: 2px dashed #00f3fc;
+    background: #F037A550;
+    
+}
+
+label.option-set {
+
+    display: flex;
+    margin: 10px auto;
+    font-size: 2rem;
+    font-family: "VT323", mono;
+    background-color: #F037A5cc;
+    border: 2px solid #00f3fc;
+    text-align: left;
+    padding: 10px 20px;
+    vertical-align: middle;
+    width:70%;
+
+}
+
+input[type=radio], input[type=checkbox] {
+    
+    display:flex;
+    margin: 10px;
+    margin-left: auto;
+    accent-color: #00f3fc;
+    width: 5%;
+
+}
+
+textarea {
+
+    border: 2px outset #00f3fc;
+    margin: 10px auto;
+    font-size: 1.5rem;
+    width: 80%
+
+}
+
+input[type=submit] {
+
+    width:auto;
+    padding:10px;
+    margin-bottom:25px;
+
+}
