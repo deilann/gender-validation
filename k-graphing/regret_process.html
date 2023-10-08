@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/regrets.css">
+    <title>regret process</title>
+  </head>
+  <body>
+    <h1 id="title">regret process</h1>
+    <p id="description" class="instructions">please it is NOW mandatory to form kR03101 <br> thank you!!!! <br> we apologize for convenience<p>
+
+    <form id="survey-form" method="post" action="/k.html">
+      <p class="form-name">kR03101</p>
+      <fieldset id="very-legal-information">
+        <legend>provide personal data!</legend>
+        <label for="name" id="name-label">
+          full legal name <input type="text" id="name" placeholder="very very sorry jr" required>
+        </label>
+        <label for="email" id="email-label">
+          email <input type="email" id="email" placeholder="example@goodapology.com" required>
+        </label>
+        <label for="number" id="number-label">
+          favorite k <input type="number" id="number" min=1 max=10 placeholder=1>
+        </label>
+        <label for="dropdown" id="dropdown-label">
+          best weapon:
+          <select id="dropdown">
+            <option>coffee</option>
+            <option>cookie</option>
+            <option>kittens</option>
+            <option>yaseen</option>
+            <option>POTATO</option>
+            <option>computer</option>
+            <option>pizza</option>
+            <option>incorrect opinion</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset id="exclusive-set" class="option-set">
+        <legend>verbiage</legend>
+        <label for="exclusive1" id="exclusive1-label" class="option-set">i am so sorry <input type="radio" name="choice" id="exclusive1" value=1></label>
+        <label for="exclusive2" id="exclusive2-label" class="option-set">
+          i apologize <input type="radio" name="choice" id="exclusive2" value=2>
+        </label>
+        <label for="exclusive3" id="exclusive3-label" class="option-set"> please forgive me <input type="radio" name="choice" id="exclusive3" value=3 checked>
+        </label>
+      
+      </fieldset>
+
+      <fieldset id="inclusive-set">
+        <legend>future plans</legend>
+        <label for="inclusive1" id="inclusive1-label" class="option-set">
+          do better <input type="checkbox" id="inclusive1" value=4>
+        </label>
+        <label for="inclusive2" id="inclusive2-label" class="option-set">
+          be more mindful <input type="checkbox" id="inclusive2" value=5>
+        </label>
+        <label for="inclusive3" id="inclusive3-label" class="option-set">
+          become infallible <input type="checkbox" id="inclusive3" value=6>
+        </label>
+
+      </fieldset>
+
+      <fieldset id="comments">
+        <legend>personalization</legend>
+        <label for="comment" id="comment-label">
+          be specific
+          <textarea id="comment" name="comment" placeholder="it was wrong for me to..."></textarea>
+
+      </fieldset>
+
+      <input type="submit" value="Submit" id="submit">
+
+    </form>
+    
+  </body>
+</html>
