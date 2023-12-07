@@ -1,0 +1,171 @@
+@import url(https://fonts.bunny.net/css?family=atkinson-hyperlegible:400|exo:300i,800);
+
+
+:root {
+  --darker: #18122B;
+  --dark: #2D2642;
+  --dark-shadow: #18122BAA;
+  --cream: #F8EAD7;
+  --dark-border: #443C68;
+  --dark-hover: #443C68AA;
+  --light: #A78295;
+  --light-shadow: #87677FAA;
+  --light-border: #87677F;
+  --code: #fd6ca6;
+}
+
+* {
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  box-sizing: inherit;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background-color: var(--dark);
+  color: var(--cream);
+}
+
+
+nav {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  padding-left: 0;
+  text-align: center;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--darker);
+  box-shadow: 1px 0 20px var(--dark-shadow);
+}
+
+nav div {
+  padding: 10px 12px;
+  font-size: 1.25rem; 
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border-bottom: 4px solid var(--dark-border);
+  pointer-events: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: 100vh;
+  flex: 1;
+  padding: 16px;
+  padding-left: 0;
+  margin-left: 20px;
+}
+
+.subsection {
+  margin: 1rem;
+}
+
+main p, ul {
+  margin: 0.75rem 0;
+  max-width: 75vw;
+}
+
+header, .flavor {
+  font-family: 'Exo', sans-serif;
+}
+
+h1, h2, nav header {
+  font-size: 2rem;
+  margin: 1rem 0 .15rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.flavor {
+  margin: 0 0 .75rem 0;
+}
+
+nav .flavor {
+  font-size: 1.25rem;
+}
+
+main .flavor {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.subsection .flavor {
+  font-size: 1rem;
+}
+
+a {
+  pointer-events: auto;
+  color: var(--code);
+  padding: 0 .1rem;
+}
+
+a:hover{
+  color: var(--cream);
+}
+
+main a:hover {
+  background: var(--darker);
+}
+ 
+nav div:hover {
+  box-shadow: inset 0 0 50px var(--dark-hover)
+}
+
+.code-box {
+  background-color: var(--darker);
+  margin: 1rem;
+  padding: .25rem 1rem;
+  width: 50vw;
+  overflow: scroll;
+  border-right: 2px solid var(--code);
+}
+
+code {
+  background-color: var(--darker);
+  padding: 0 .1rem;
+  color: var(--code);
+}
+
+@media (prefers-color-scheme: light) {
+
+  body {
+    background-color: var(--cream);
+    color: var(--dark);  
+  }
+  nav {
+    background-color: var(--light);
+    box-shadow: 1px 0 20px var(--light-shadow);
+  }
+  
+  nav div {
+    border-bottom: 4px solid var(--light-border); 
+  }
+
+  nav div:hover {
+    box-shadow: inset 0 0 50px var(--light-shadow);
+  }
+
+  header, subheader {
+    color: var(--darker);
+  }
+
+  nav a {
+    color: var(--dark);
+  }
+
+  nav a:hover {
+   color: var(--cream);
+  }
+
+}
