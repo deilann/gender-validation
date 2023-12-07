@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pep-styles.css">
+    <title>pep-8 for noobs</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-header">
+        <header>PEP 8</header>
+        <p class="flavor">(for noobs)</p>
+        
+      </div>
+      <div class="nav-link-box">
+        <a href="#introduction" class="nav-link">introduction</a>
+      </div>
+      <div class="nav-link-box">
+        <a href="#basics" class="nav-link">basics</a>
+      </div>
+      <div class="nav-link-box">
+        <a href="#naming" class="nav-link">naming</a>
+      </div>
+      <div class="nav-link-box">
+        <a href="#syntax" class="nav-link">syntax</a>
+      </div>
+      <div class="nav-link-box">
+        <a href="#commenting" class="nav-link">commenting</a>
+      </div>
+      <div class="nav-link-box">
+        <a href="#common_mistakes" class="nav-link">common mistakes</a>
+      </div>
+      <div class="nav-link-box">
+        <a href="#tips" class="nav-link">tips</a>
+      </div>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>
+          <h1>introduction</h1>
+        </header>
+          <p class="flavor">why does this even exist</p>
+        <p>PEP 8 is a common Python style guide that focuses on readability but the way it’s written isn’t very accessible to beginners. despite that, many of its guidelines can be used in even basic projects. adhering to a style guide early on can help you establish good habits and write more readable code. these guidelines will push you to write more Pythonic code, which can save you from later growing pains as your coding matures. when i've helped folks new to Python understand how to improve their code, i realized that they probably would have been better off if they had been introduced to PEP 8 earlier - rather than after they could understand it in full.</p>
+        <p>over time, you may find strictly following PEP 8 producesless readable code. like all conventions, PEP 8 has room for rule-breaking... well, <em>informed</em> rule-breaking. like in every type of writing, before you can discard convention you must understand why the it exists and what you gain by going rogue. remember: the goal is to make consistent, intentional choices - not to follow rules for their own sake. settle on (and document) sensible standards that produce readable code. keeping future readers in mind is half the battle.</p>
+        <p>so don't be too stressed! and don't be worried if you can't figure out how to implement everything discussed in everything you code. writing readable code and understanding what it means to be Pythonic is a journey, not a race. it's awesome you're getting started.</p>
+        <p>let’s go!</p>
+      </section>
+      <section class="main-section" id="basics">
+        <header>
+          <h1>basics</h1>
+        </header>
+        <p class="flavor">whitespace, layout, the little basics</p>
+        <p>here's the trouble... these basics are the "rules" many throw out first. i do suggest trying to implement the basic guidelines when starting, simply because it will get you used to consistency. and again, consistency is the core of readable code. if you find that a convention is not working for you, i highly suggest asking yourself why. is it that your code could be written better, or that the style convention is failing your project?</p>
+        <p>also remember that adhering to common style conventions like this can be helpful on collaborative projects. if your project is going to be opensource and you're going to accept pull requests, using a common style will make it easier to keep your code cohesive.</p>
+        <div class="subsection">
+        <header>
+          <h2>indenting your code</h2>
+        </header>
+        <p class="flavor">tabs or spaces?</p>
+        <p>per PEP 8, each indentation level should be 4 spaces, no tabs. as Python's syntax is whitespace dependent, being consistent on your identation style is key.</p>
+          <div class="code-box"><pre><code># technically you can use two spaces
+def two_spaces():
+  print("like this")
+
+# but if you're inconsistent
+def bad_spacing():
+    print("you can't reach this")</code></pre></div>
+      <p>there are a few exceptions to this, like hanging indents. when you feel up for more detail, go ahead and <a href="https://peps.python.org/pep-0008/#indentation">read the full docs</a>. continuation lines are an example of this:</p>
+      <div class="code-box"><pre><code># this line was too long, so it was continued
+very_long = a_very_long_function_name(
+        many_long_parameters, like_so_many,
+        very_very_long_parameters)</code></pre></div>
+        <p>in these cases, you'll want to use an extra level of indentation, so eight spaces.</p>
+        </subsection>
+        <subsection>
+          <header>
+            <h2>line lenth</h2>
+            <p>speaking of...</p>
+          </header>
+          keep all lines no longer than 79. if it's part of something longer, like a docstring or a comment (flowing text), keep it to 72 characters. in the past, backslashes were used to note continuing text, but that has fallen out of favor.
+        </subsection>
+        <subsection>
+          <header>
+            <h2>where to break</h2>
+          </header>
+          <p class="flavor">before or after operators?</p>
+          <p>it used to be convention to break after an operator for long lines. now, however, the convention follows mathematics, as it keeps the operator closer to the thing it's operating on:
+            <div class="code-box"><pre><code># how not to do it
+total_sum = (todays_sum +
+        yesterdays_sum +
+        day_before_yesterdays_sum)
+
+# how to do it
+better_total_sum = (todays_sum
+        + yesterdays_sum
+        + day_before_yesterdays_sum)</code></pre></div>
+        </subsection>
+        <subsection>
+          <header>
+            <h2>blank lines</h2>
+            <p>they make code easier to read</p>
+          </header>
+          <p>top-level (so not inside another function) functions and classes should have two blank lines before and after them. if they're nested or inside a class, only use one line. use blank line to denote sections within a function, to make it easier to read.</p>
+        </subsection>
+        <subsection>
+          <header>
+            <h2>miscellaneous</h2>
+            <p>lightning round!</p>
+          </header>
+          some more quick basics, quickly:
+          <ul>
+            <li>imports should be on their own line, not separated by commas</li>
+            <li>avoid wildcard imports when possible</li>
+            <li>always use utf-8 encoding</li>
+            <li>feel free to use <code>"string quotes"</code> or <code>'string quotes'</code>, but be consistent</li>
+            <li>avoid extraneous whitespace. see specific examples at the <a href="https://peps.python.org/pep-0008/#pet-peeves">full documentation</a>.</li>
+          </ul>
+        </subsection>
+      </section>
+      <section class="main-section" id="naming">
+        <header>
+          <h1>naming</h1>
+        </header>
+        <p class="flavor">what's in a variable name anyway</p>
+        <p></p>
+      </section>
+      <section class="main-section" id="syntax">
+        <header>
+          <h1>syntax</h1>
+        </header>
+        <p class="flavor">let's get stylistic</p>
+        <p></p>
+      </section>
+      <section class="main-section" id="commenting">
+        <header>
+          <h1>commenting</h1>
+        </header>
+        <p class="flavor">just assume it's still unreadable</p>
+        <p></p>
+      </section>
+      <section class="main-section" id="common_mistakes">
+        <header>
+          <h1>common mistakes</h1>
+        </header>
+        <p class="flavor">we all make mstakes</p>
+        <p></p>
+      </section>
+      <section class="main-section" id="tips">
+        <header>
+          <h1>tips</h1>
+        </header>
+        <p class="flavor">tips, tricks, tools, and the tl;dr</p>
+        <p></p>
+      </section>        
+    </main>
+  </body>
+</html>
