@@ -12,7 +12,7 @@ const colorGroups = {
 };
 
 let currentColorGroup = 3; // Start with a default color group
-
+button3.disabled = true;
 const selectRandomColor = () => {
     const colors = colorGroups[currentColorGroup];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
