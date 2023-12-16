@@ -1,0 +1,68 @@
+* {
+    font-size: min(8vh, 8vw);
+    font-weight: bold;
+    font-family: monospace;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    justify-content: center;
+    display: flex;
+    background: #16232e;
+    padding: min(5vh, 5vw);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.color-box {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: min(80vh, 80vw); /* Base height on viewport */
+    width: min(80vh, 80vw);  /* Base width on viewport */
+}
+
+#color-text {
+    display: flex;
+    background-color: #cccccc40;
+    padding: min(2vw, 2vh);
+}
+
+.button-row, .copy {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5%;
+    flex: 2;
+}
+
+button {
+    display: flex;
+    flex: auto;
+    background: linear-gradient(#6aa5e1,#89a9c9 30%, #89a9c9 70%, #6aa5e1);
+    border: 5px outset #080c11;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+button:disabled {
+    background: linear-gradient(#3f4e61,#6aa5e1 30%, #6aa5e1 70%, #3f4e61);
+    border: 5px outset #586b83;
+    color: #080c11;
+}
+
+#color-container {
+    border-radius: 10px;
+    margin: 5%;
+    border: 5px solid #080c11;
+    background-color: #fff; /* Set a default color */
+    display: flex;
+    flex: 7;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
