@@ -41,7 +41,7 @@ button {
     display: flex;
     flex: auto;
     background: linear-gradient(#6aa5e1,#89a9c9 30%, #89a9c9 70%, #6aa5e1);
-    border: 5px outset #080c11;
+    border: min(1vw, 1vh) outset #080c11;
     border-radius: 10px;
     cursor: pointer;
     justify-content: center;
@@ -50,14 +50,14 @@ button {
 
 button:disabled {
     background: linear-gradient(#3f4e61,#6aa5e1 30%, #6aa5e1 70%, #3f4e61);
-    border: 5px outset #586b83;
+    border: min(1vw, 1vh) solid #586b83;
     color: #080c11;
 }
 
 #color-container {
     border-radius: 10px;
     margin: 5%;
-    border: 5px solid #080c11;
+    border: min(2vw, 2vh) solid #080c11;
     background-color: #fff; /* Set a default color */
     display: flex;
     flex: 7;
