@@ -25,7 +25,7 @@ selectRandomColor();
 const buttonRow = document.querySelector(".button-row");
 buttonRow.addEventListener("click", (event) => {
     if (event.target.matches("button")) {
-        currentColorGroup = event.target.textContent;
+        currentColorGroup = event.target.value;
         button3.disabled = false;
         button4.disabled = false;
         button6.disabled = false;
