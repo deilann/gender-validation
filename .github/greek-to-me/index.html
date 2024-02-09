@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Greek/Beta Converter</title>
+  <script src="greek.js"></script> 
+</head>
+<body>
+
+  <textarea id="greekText" rows="5" cols="30" disabled></textarea>
+  <button onclick="convertText()">Convert</button>
+  <button onclick="clearText('greekText')">Clear Greek</button>
+  <button onclick="copyText('greekText')">Copy Greek</button>
+
+  <textarea id="betaText" rows="5" cols="30" disabled></textarea>
+  <button onclick="clearText('betaText')">Clear Beta</button>
+  <button onclick="copyText('betaText')">Copy Beta</button>
+
+  <script>
+    document.getElementById('betaText').addEventListener('focusout', checkBetaFocus);
+    document.getElementById('greekText').addEventListener('focusout', checkGreekFocus);
+  </script>
+
+</body>
+</html>
